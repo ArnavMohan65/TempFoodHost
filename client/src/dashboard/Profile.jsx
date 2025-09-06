@@ -11,7 +11,17 @@ import axios from "axios";
 const Profile = () => {
   const navigate = useNavigate();
   const userData = localStorage.getItem("user");
-  const user = JSON.parse(userData);
+  const user = userData ? JSON.parse(userData) : null;
+
+  if (!user) {
+    // Optionally redirect to login or show an error
+    return (
+      <div>
+        <p>User not found. Please log in again.</p>
+        <button onClick={() => navigate("/login")}>Go to Login</button>
+      </div>
+    );
+  }
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(user.name);
   const [number, setNumber] = useState(user.number);
