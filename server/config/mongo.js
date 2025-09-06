@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = 'mongodb+srv://arnavmohan45678:RApzu38uKY@hackfest.oh1prfa.mongodb.net/?retryWrites=true&w=majority&appName=hackfest';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/food-donations';
 
 const connectDB = async () => {
     try {
