@@ -1,0 +1,50 @@
+.first-display {
+    margin: 20px;
+    background-image: url("../../assets/ImgDisplay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.img-text {
+    position: relative;
+    text-align: center;
+    top: 340px;
+    font-size: 70px;
+    color: white;
+    font-weight: 400;
+}
+
+.img-text span {
+    color: green;
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    top: 343px;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    border: 1.5px solid transparent;
+    background: rgb(10, 87, 10);
+    color: white;
+    position: relative;
+    top: 355px;
+    text-align: center;
+    left: 43.5%;
+}
+
+.btn:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    color: black;
+}
